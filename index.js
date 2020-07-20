@@ -25,13 +25,15 @@ function processFirstItem(stringList, callback) {
 
 /* Task 1: `counterMaker`
  * Study the code for counter1 and counter2. Answer the questions below.
- * 
+ 
  * 1. What is the difference between counter1 and counter2?
- * 
+
+ 
  * 2. Which of the two uses a closure? How can you tell?
- * 
+ counter1, it declares count within it's scope so when you run it, the count will icrement by 1 each time it's called.
+  
  * 3. In what scenario would the counter1 code be preferable? In what scenario would counter2 be better? 
- *
+ 
 */
 
 // counter1 code
