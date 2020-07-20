@@ -42,12 +42,13 @@ Find the file `index.js` and complete the tasks.
 Edit the `ReadMe` file with your answers.
 
 1. In your own words, define closure (1-2 sentences).
+A closure gives you access to an outer function’s scope from an inner function.
+
 2. Study the following code, then answer the questions below.
 
 ```js
 function personalDice(name){
   return function(){
-      // generate random number between 1 and 6
     const newRoll = Math.floor(Math.random() * 6);
     console.log(`${name} rolled a ${newRoll}`)
   }
@@ -63,8 +64,15 @@ dansRoll();
 ```
 
 a. Where is closure used in this code? How can you tell?
+The return function withing personalDice
+
 b. Compare and contrast calling `dansRoll` the first and second time. What is always the same? What could change?
+it will always be dansRoll, but the number will come out differently.
+
 c. What is the lexical scope of `newRoll`? 
+const newRoll = Math.floor(Math.random() * 6);
+
+
 
 ### Task 2c - Exit Ticket
 
