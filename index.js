@@ -33,7 +33,7 @@ counter1 uses it's scope to figure out what it needs to do. counter2 uses a glob
  counter1, it declares count within it's scope so when you run it the count will icrement by 1 each time it's called.
   
  * 3. In what scenario would the counter1 code be preferable? In what scenario would counter2 be better? 
- counter 1 would be preferable when you don't want to reset your counter. counter2 would be prefereable when you do want to reset your counter.
+ counter1 would be preferable when you don't want to reset your counter. counter2 would be prefereable when you do want to reset your counter.
 */
 
 // counter1 code
@@ -125,11 +125,11 @@ function scoreboard(currentInning, num1) {
   for (let i = 0; i < num1; i++) {
     currentScore.homeTeam = currentScore.homeTeam + currentInning();
     currentScore.awayTeam = currentScore.awayTeam + currentInning();
-    if (i===0) {
+    if (i === 0) {
       console.log(`${i+1}st inning: ${currentScore.awayTeam}-${currentScore.homeTeam}`);
-    } else if(i===1) {
+    } else if(i === 1) {
       console.log(`${i+1}nd inning: ${currentScore.awayTeam}-${currentScore.homeTeam}`);
-    } else if(i===2) {
+    } else if(i === 2) {
       console.log(`${i+1}rd inning: ${currentScore.awayTeam}-${currentScore.homeTeam}`);
     } else {
       console.log(`${i+1}th inning: ${currentScore.awayTeam}-${currentScore.homeTeam}`);
@@ -138,6 +138,5 @@ function scoreboard(currentInning, num1) {
   console.log(`Final Score: ${currentScore.awayTeam}-${currentScore.homeTeam}`);
   return currentScore
 }
-
 
 console.log(scoreboard(inning, 9));
