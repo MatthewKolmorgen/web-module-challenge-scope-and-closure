@@ -27,13 +27,13 @@ function processFirstItem(stringList, callback) {
  * Study the code for counter1 and counter2. Answer the questions below.
  
  * 1. What is the difference between counter1 and counter2?
-
+counter1 uses it's scope to figure out what it needs to do. counter2 uses a global variable to pass the variable into the function.
  
  * 2. Which of the two uses a closure? How can you tell?
  counter1, it declares count within it's scope so when you run it, the count will icrement by 1 each time it's called.
   
  * 3. In what scenario would the counter1 code be preferable? In what scenario would counter2 be better? 
- 
+ counter 1 would be preferable when you don't want to reset your counter. counter2 would be prefereable when you do want to reset your counter.
 */
 
 // counter1 code
@@ -58,11 +58,7 @@ function counter2() {
 
 Write a function called `inning` that returns a random number of points that a team scored in an inning. This should be a whole number between 0 and 2. */
 
-function inning(/*Code Here*/){
 
-    /*Code Here*/
-
-}
 
 /* Task 3: finalScore()
 
