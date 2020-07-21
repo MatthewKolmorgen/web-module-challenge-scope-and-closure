@@ -104,6 +104,7 @@ Create a function called `scoreboard` that accepts the following parameters:
 (2) Callback function `inning`
 (3) A number of innings
 
+
 and returns the score at each pont in the game, like so:
 1st inning: awayTeam - homeTeam
 2nd inning: awayTeam - homeTeam
@@ -122,9 +123,11 @@ function scoreboard(currentInning, num1) {
     homeTeam: 0,
     awayTeam: 0,
   }
+
   for (let i = 0; i < num1; i++) {
     currentScore.homeTeam = currentScore.homeTeam + currentInning();
     currentScore.awayTeam = currentScore.awayTeam + currentInning();
+    
     if (i === 0) {
       console.log(`${i+1}st inning: ${currentScore.awayTeam}-${currentScore.homeTeam}`);
     } else if(i === 1) {
@@ -135,7 +138,7 @@ function scoreboard(currentInning, num1) {
       console.log(`${i+1}th inning: ${currentScore.awayTeam}-${currentScore.homeTeam}`);
     }
   }
-  console.log(`Final Score: ${currentScore.awayTeam}-${currentScore.homeTeam}`);
+  console.log(`Final Score: ${currentScore.awayTeam} - ${currentScore.homeTeam}`);
   return currentScore
 }
 

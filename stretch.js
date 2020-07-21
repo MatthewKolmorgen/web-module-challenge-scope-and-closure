@@ -30,8 +30,8 @@
 // source https://www.codenewbie.org/blogs/object-oriented-programming-vs-functional-programming
 
 // Pro's and Con's of Functional Programming
-/*
 
+/*
 Pros:
 Working with functional programming provides accurate and fast code writing.
 There is a smaller number of language primitives.
@@ -39,5 +39,4 @@ There is a smaller number of language primitives.
 Cons:
 There is no efficient vocablulary for funtional languages.
 Laziness.
-
 */ 

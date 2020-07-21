@@ -64,7 +64,7 @@ dansRoll();
 ```
 
 a. Where is closure used in this code? How can you tell?
-The return function below personalDice
+The return function below personalDice. Beause it's nested
 
 b. Compare and contrast calling `dansRoll` the first and second time. What is always the same? What could change?
 it will always be dansRoll, but the number will come out differently.
